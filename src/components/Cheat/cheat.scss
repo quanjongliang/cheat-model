@@ -1,0 +1,21 @@
+.cheat {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: gray;
+  z-index: 2;
+  transition: all 0.3s linear;
+  &.hidden {
+    z-index: -1;
+    transition: all 0.3s linear;
+    opacity: 0;
+  }
+  &-close {
+    cursor: pointer;
+  }
+  &-container {
+  }
+}
